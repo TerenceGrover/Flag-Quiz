@@ -1,0 +1,132 @@
+body {
+  background-color: rgb(21, 21, 38);
+  background: linear-gradient(130deg, #000000, #0b064a, #6d4500);
+  animation: bganim 21s ease infinite;
+}
+
+h2{
+  color: white;
+}
+
+#wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+}
+
+#img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 300px;
+}
+
+.vl {
+  border-left: 2px solid rgb(255, 244, 122);
+  width: 5px;
+  height: 50vh;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  color: aliceblue;
+  font-size: large;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+[type='text'] {
+  background-color: aliceblue;
+  font-size: x-large;
+  padding : 10px;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+[type='submit'] {
+  background-color: transparent;
+  font-size: large;
+  color: aliceblue;
+  border: solid rgb(255, 244, 122) 1px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#skip {
+  background-color: transparent;
+  font-size: large;
+  color: aliceblue;
+  border: solid rgb(255, 244, 122) 1px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#solution {
+  opacity: 0;
+  margin-top: 30px;
+  font-size: larger;
+  text-transform: capitalize;
+}
+
+#footer{
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items : center;
+}
+
+@keyframes bganim {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}

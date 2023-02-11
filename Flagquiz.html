@@ -1,117 +1,38 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" />
     <title>FlagQuiz</title>
-</head>
-<style>
-    body{
-        background-color:rgb(21, 21, 38);
-        max-width: 80vw;
-        margin: auto;
-        margin-top: 20vh;
-    }
-    .css-selector {
-        background: linear-gradient(130deg, #000000, #0b064a, #6d4500);
-        background-size: 600% 600%;
-
-        animation: bganim 21s ease infinite;
-    }
-
-    @keyframes bganim { 
-        0%{background-position:94% 0%}
-        50%{background-position:7% 100%}
-        100%{background-position:94% 0%}
-    }
-    #left{
-        float: left;
-        margin-top: 20vh;
-        margin-left: 8vw;
-    }
-    img{
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        width: 300px;
-    }
-    .vl {
-        border-left: 2px solid rgb(255, 244, 122);
-        float: left;
-        height: 50vh;
-        margin-left: 21vw;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        }
-
-    #right{
-        float:left;
-        margin-top: 25vh;
-        margin-left: 10vw;
-    }
-    span{
-        color: aliceblue;
-        margin-left: 37vw;
-
-    }
-    [type="text"]{
-        background-color: aliceblue;
-        font-size: large;
-        color: black;
-        border-radius: 20px;
-        border:none;
-        padding: 10px;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    }
-    [type="submit"]{
-        display: block;
-        margin-left: 110px;
-        margin-top: 25px;
-        background-color: transparent;
-        font-size: large;
-        color: aliceblue;
-        border: solid rgb(255, 244, 122) 1px;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    }
-    button:hover{
-        cursor: pointer;
-    }
-    #skip{
-        display: block;
-        margin-top: 10px;
-        margin-left: 122px;
-        background-color: transparent;
-        font-size: large;
-        color: aliceblue;
-        border: solid rgb(255, 244, 122) 1px;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    }
-</style>
-<body class = "css-selector">
-    <div class="top" style="display: block; width: max-content; position: absolute;">
-    <span style="font-size: xx-large; padding-bottom: 40px;">Flag Guessing Game</span>
-    </div>
-    <div class="game-wrapper">
-    <div id="left">
-        <div style="display: flex; flex-direction: column;">
-            <img src="#" alt="flag to guess">
-            <span id="solution" style="align-self: center; margin-left: 0vw; opacity: 0; margin-top: 30px; font-size: larger;text-transform:capitalize;"></span>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <div id="wrapper">
+      <div class="top">
+        <h2>Flag Guessing Game</h2>
+      </div>
+      <div id="main">
+        <div id="left">
+          <div id="img-container">
+            <img src="#" alt="flag to guess" />
+            <span id="solution"></span>
+          </div>
         </div>
-    </div>
-    <div class="vl"></div>
-    <div id="right">
-        <div>
-            <input type="text" size="25px"></input>
+        <div class="vl"></div>
+        <div id="right">
+          <input type="text" />
+          <div id="buttons">
             <button type="submit">Submit</button>
             <button id="skip">Skip</button>
+          </div>
         </div>
-    </div><div>
-        <span id="score" style="padding-left: 100px;">Score : 0</span>
-        <span id="highscore" style="padding-left: 100px; margin-top: 20px; margin-bottom: 10px">Highscore:</span>
-        <span id="lives" style="padding-left: 60px;">Life Counter : ✅ ✅ ✅</span>
+      </div>
+      <div id="footer">
+        <span id="score">Score : 0</span>
+        <span id="highscore">Highscore:</span>
+        <span id="lives">Life Counter : ✅ ✅ ✅</span>
+      </div>
     </div>
-</div>
-    <script src="./Flagquiz.js"></script>
-</body>
+  </body>
+  <script src="./Flagquiz.js"></script>
 </html>
