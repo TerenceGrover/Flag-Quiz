@@ -2,8 +2,7 @@
 Simple Flag Guessing Game
 
 With Score / Highscore / Life systems
-All coded in native JavaScriptHTML/CSS
 
-Utlimately, a better graphic interface will be used, the highscore will be stored on the browser memory and you will be able to have simultaneous online games.
+Just Clone the repo and run the HTMl in localhost. No dependencies
 
-<img width="1657" alt="Capture d’écran 2022-08-16 à 18 26 12" src="https://user-images.githubusercontent.com/109336882/184930514-bae57059-2581-460b-a609-9fce37ef5caf.png">
+<img width="1263" alt="Capture d’écran 2023-03-18 à 11 35 09" src="https://user-images.githubusercontent.com/109336882/226100323-91dd4017-40cb-4252-af54-d5e2f4ba9a27.png">
